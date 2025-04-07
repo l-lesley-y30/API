@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #eee;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+  gap: 20px;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Image Styles */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  max-height: 400px; /* Limit the image height */
+}
+
+/* Button Styles */
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  background-color: #1e90ff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0c7cd5;
+}
+
+/* Greeting and Quote Styles */
+#greeting {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+#quote {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+#author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  #greeting {
+    font-size: 20px;
+  }
+
+  #quote {
+    font-size: 18px;
+  }
+
+  #author {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
